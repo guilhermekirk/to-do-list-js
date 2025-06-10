@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #52057B;
+    --secondary-color: hsl(150, 100%, 74%);
+    --terciary-color: hsl(155, 100%, 78%);
+    --background-color: hsl(0, 0%, 0%);
+    --background-color2: #0c0c0c;
+ --background-color3: #868686;
+
+
+    --text-color: #ffffff;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-add-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+#input-new-task,
+#btn-new-task {
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+}
+
+#input-new-task {
+    border-radius: 14px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    width: 300px;
+}
+
+#btn-new-task {
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 40px;
+    cursor: pointer;
+    transition-duration: 400ms;
+}
+#btn-new-task:hover {
+    background-color: var(--secondary-color);
+}
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    width: 380px;
+    
+}
+#to-do-list li {
+    list-style-type: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition-duration: 400ms;
+}
+#to-do-list li:hover{
+    background-color: var(--background-color2);
+    color: var(--terciary-color);
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+#btn-ok{
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    font-size: 10px;
+    padding: 30px, 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 400ms;
+}
+#btn-ok:hover {
+    background-color: var(--terciary-color);
+}
